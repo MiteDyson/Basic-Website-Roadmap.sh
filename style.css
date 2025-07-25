@@ -1,0 +1,182 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Styles */
+header {
+  background-color: #24292f;
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Navbar Layout */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo and Name Grouping */
+.brand-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #58a6ff;
+}
+
+/* Optional: Animated underline effect */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #58a6ff;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Frontend devloper section */
+.hero {
+  background-color: #f6f8fa;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* 3 middle sections */
+
+.section {
+  display: flex; /* Enable flexbox */
+  gap: 20px; /* Space between columns */
+  padding: 20px;
+  height: auto; /* Remove fixed height */
+}
+
+.section div {
+  width: 33.33%; /* Equal width for all */
+  padding: 15px; /* Inner spacing */
+}
+.section h2 {
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-size: 18px;
+  color: #24292f;
+  font-family: cursive;
+}
+.section p {
+  padding-left: 10px;
+  padding-bottom: 5px;
+  color: rgb(1, 1, 1);
+}
+/* Projects section */
+#Projects {
+  background-color: #d2e5f9;
+}
+
+/* Workexp section */
+#Workexp {
+  background-color: #a4ffc5;
+}
+
+/* Education */
+#Education {
+  background-color: #f9d2d2;
+}
+#courses {
+  list-style: none;
+  padding-left: 20px;
+}
+
+/* test */
+/* CSS */
+.reviews {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.reviews h2 {
+  font-size: 1.8rem;
+  color: #24292f;
+  margin-bottom: 2rem;
+}
+
+.review-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.review-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 300px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-text {
+  font-style: italic;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.reviewer-name {
+  font-weight: 600;
+  color: #24292f;
+  margin-bottom: 0.2rem;
+}
+
+.reviewer-title {
+  color: #6a737d;
+  font-size: 0.9rem;
+}
